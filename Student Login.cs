@@ -37,7 +37,7 @@ namespace Milestone_2_PRG252_Group_Project
             //writing from textbox to txt file
             using (StreamWriter txt = new StreamWriter("C:\\Users\\Vusi\\Downloads\\Milestone 2 PRG252 Group Project\\BC Student Login Credentials"))
             {
-                txt.WriteLine("Username: " ,txtUSERNAME.Text);
+                txt.WriteLine("Username:" ,txtUSERNAME.Text);
             }
         }
 
@@ -64,7 +64,7 @@ namespace Milestone_2_PRG252_Group_Project
                 userpage.Show();
                 this.Hide();
             }
-            else if (txtUSERNAME.Text == "Omphile Kgasoane" && txtPassword.Text == "PK1234")
+            else if (txtUSERNAME.Text == "Omphile Kgasoane" && txtPassword.Text == "Omphile1234")
             {
                 using (StreamWriter streamwriter = new StreamWriter("C:\\Users\\Vusi\\Downloads\\Milestone 2 PRG252 Group Project\\BC Student Login Credentials"))
                 {
@@ -75,6 +75,24 @@ namespace Milestone_2_PRG252_Group_Project
                 this.Hide();
             }
             else if (txtUSERNAME.Text == "Lethabo Makhale" && txtPassword.Text == "Lethabo1122")
+            {
+                using (StreamWriter streamwriter = new StreamWriter("C:\\Users\\Vusi\\Downloads\\Milestone 2 PRG252 Group Project\\BC Student Login Credentials"))
+                {
+                    streamwriter.WriteLine(txtUSERNAME.Text);
+                }
+                UserPage userpage = new UserPage();
+                userpage.Show();
+                this.Hide();
+            } else if (txtUSERNAME.Text == "User" && txtPassword.Text == "User")
+            {
+                using (StreamWriter streamwriter = new StreamWriter("C:\\Users\\Vusi\\Downloads\\Milestone 2 PRG252 Group Project\\BC Student Login Credentials"))
+                {
+                    streamwriter.WriteLine(txtUSERNAME.Text);
+                }
+                UserPage userpage = new UserPage();
+                userpage.Show();
+                this.Hide();
+            } else if (txtUSERNAME.Text == "Admin" && txtPassword.Text == "Admin")
             {
                 using (StreamWriter streamwriter = new StreamWriter("C:\\Users\\Vusi\\Downloads\\Milestone 2 PRG252 Group Project\\BC Student Login Credentials"))
                 {
